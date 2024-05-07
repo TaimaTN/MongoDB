@@ -2,6 +2,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import userModel from "../../../DB/models/User.model.js";
 import { loginSchema, registerSchema } from "../user/validation.js";
+
 const signUp = async (req, res) => {
     try {
         const { password, email, userName, cpassword } = req.body;
